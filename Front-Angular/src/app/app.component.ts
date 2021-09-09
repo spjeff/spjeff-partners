@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Addresses } from './entities/addresses';
 import { PartnersService } from './partners.service';
 
@@ -11,7 +12,7 @@ import { PartnersService } from './partners.service';
 export class AppComponent {
   // Default
   title = 'NPS-Partners';
-  addresses:Addresses[] = [];
+  addresses!: Observable<Addresses[]>;
 
   // Loading
   constructor(private partnerService:PartnersService) {
@@ -19,8 +20,8 @@ export class AppComponent {
   }
 
   // Async Promise
-  async callAddresses() {
-    this.addresses = await this.partnerService.getAllAddresses();
+  callAddresses() {
+    this.addresses = this.partnerService.getAllAddresses();
   }
   
 

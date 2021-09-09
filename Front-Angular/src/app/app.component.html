@@ -3,7 +3,7 @@
 
 <!-- https://spjeff-partner-web.azurewebsites.net/breeze/Partners/Addresses -->
 <ul>
-    <li *ngFor="let a of addresses">
+    <li *ngFor="let a of addresses | async">
         <span>{{a.StreetAddress1}}, {{a.City}}</span>
     </li>
 </ul>

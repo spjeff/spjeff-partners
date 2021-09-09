@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 // Breeze
-import { BreezeBridgeHttpClientModule } from 'breeze-bridge2-angular';
+// import { BreezeBridgeHttpClientModule } from 'breeze-bridge2-angular';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -15,7 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BreezeBridgeHttpClientModule,
+    // BreezeBridgeHttpClientModule,
     HttpClientModule
   ],
   providers: [],
