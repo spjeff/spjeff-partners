@@ -202,7 +202,6 @@
     <Compile Include="Communications.cs">
       <DependentUpon>PartnersModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PartnersController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="DocumentPrivacy.cs">
@@ -308,6 +307,8 @@
     <Content Include="PartnersModel.edmx.diagram">
       <DependentUpon>PartnersModel.edmx</DependentUpon>
     </Content>
+    <None Include="Properties\PublishProfiles\spjeff-partner-web - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\spjeff-partner-web - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
