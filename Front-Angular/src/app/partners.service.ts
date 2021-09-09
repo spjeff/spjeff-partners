@@ -9,6 +9,7 @@ export class PartnersService {
   private _em: EntityManager;
 
   constructor() {
+    // data from https://spjeff-partner-web.azurewebsites.net/breeze/Partners/Addresses
     this._em = new EntityManager('http://spjeff-partner-web.azurewebsites.net/breeze/Partners');
   }
 
